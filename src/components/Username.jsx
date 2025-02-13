@@ -32,31 +32,31 @@ export default function Username() {
 
   return isEditing ? (
     <div className='header'>
-      <h1>
-        Welcome back
-        <br />
-        {isSuccess && (
+      <h1>Welcome back</h1>
+      {isSuccess && (
+        <div className='edit-user'>
           <div>
             <input
               type='text'
               id='firstname'
               defaultValue={userData.body.firstName}
             />
-
             <input
               type='text'
               id='lastname'
               defaultValue={userData.body.lastName}
             />
           </div>
-        )}
-      </h1>
-      <button className='edit-button' onClick={updateUsername}>
-        Save
-      </button>
-      <button className='edit-button' onClick={toggleEditing}>
-        Cancel
-      </button>
+          <div>
+            <button className='edit-button' onClick={updateUsername}>
+              Save
+            </button>
+            <button className='edit-button' onClick={toggleEditing}>
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   ) : (
     <div className='header'>

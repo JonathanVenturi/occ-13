@@ -177,6 +177,12 @@ body {
   padding: 2rem;
 }
 
+.sign-in-content .error {
+  color: red;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
 .sign-in-icon {
   font-size: 5rem;
 }
@@ -290,5 +296,33 @@ body {
 
   .transaction-button {
     width: 200px;
+  }
+}
+
+.edit-user {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+
+  div {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  input {
+    width: 40%;
+    height: 30px;
+  }
+
+  button {
+    width: 25%;
+    border-color: #5983ad;
+    background-color: #fff;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px;
   }
 }
